@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col">
+                @Html.ActionLink("User", "Index", "AdminHome", new { area = "AdminArea" }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Client", "List", "AdminHome", new { area = "AdminArea" }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Project", "Index", "ClientProject", new { area = "AdminArea" }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Edit Profile", "EditProfile", "AdminHome", new { area = "AdminArea", Id = Session["AdminId"] }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Change Password", "ChangePassword", "AdminHome", new { area = "AdminArea", Id = Session["AdminId"] }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("SignOut", "SignOut", new { controller="ManageAdmin", area = ""}, new { @class = "btn btn-danger" })
+
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

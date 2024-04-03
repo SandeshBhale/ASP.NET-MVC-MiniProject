@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Project_1\\MiniProject1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D2A1BE3-7018-43E0-94CC-2308EE58D6FE}|MiniProject1\\MiniProject1.csproj|c:\\users\\sandesh\\desktop\\ri-tech\\project\\project_1\\miniproject1\\miniproject1\\views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D2A1BE3-7018-43E0-94CC-2308EE58D6FE}|MiniProject1\\MiniProject1.csproj|solutionrelative:miniproject1\\views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D2A1BE3-7018-43E0-94CC-2308EE58D6FE}|MiniProject1\\MiniProject1.csproj|C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Project_1\\MiniProject1\\miniproject1\\areas\\adminarea\\views\\adminhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D2A1BE3-7018-43E0-94CC-2308EE58D6FE}|MiniProject1\\MiniProject1.csproj|solutionrelative:miniproject1\\areas\\adminarea\\views\\adminhome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_MainLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Project_1\\MiniProject1\\MiniProject1\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeDocumentMoniker": "MiniProject1\\Views\\Shared\\_MainLayout.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Project_1\\MiniProject1\\MiniProject1\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeToolTip": "MiniProject1\\Views\\Shared\\_MainLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:36:49.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Project_1\\MiniProject1\\MiniProject1\\Areas\\AdminArea\\Views\\AdminHome\\Index.cshtml",
+              "RelativeDocumentMoniker": "MiniProject1\\Areas\\AdminArea\\Views\\AdminHome\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SANDESH\\Desktop\\RI-Tech\\Project\\Project_1\\MiniProject1\\MiniProject1\\Areas\\AdminArea\\Views\\AdminHome\\Index.cshtml",
+              "RelativeToolTip": "MiniProject1\\Areas\\AdminArea\\Views\\AdminHome\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:29:39.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

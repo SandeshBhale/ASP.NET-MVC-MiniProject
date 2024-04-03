@@ -1,0 +1,53 @@
+﻿@model MiniProject1.Models.ClientProject
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row col-md-12">
+            <div class="row align-items-center mt-3">
+                <div class="col-3 mx-auto">
+                    <h2>Create New Project</h2>
+                    @using (Html.BeginForm())
+                    {
+                        <label>Project Name</label>
+                        <br />
+                        @Html.EditorFor(p=>p.ProjectName)<br />
+                        @Html.ValidationMessageFor(p=>p.ProjectName)
+                        <br /><br />
+                        <label>Location Address</label>
+                        <br />
+                        @Html.EditorFor(p=>p.LocationAddress)<br />
+                        @Html.ValidationMessageFor(p=>p.LocationAddress)
+                        <br /><br />
+                        <label>Location City</label>
+                        <br />
+                        @Html.EditorFor(p=>p.LocationCity)<br />
+                        @Html.ValidationMessageFor(p=>p.LocationCity)
+                        <br /><br />
+                        <label>Client Name</label>
+                        <br />
+                        @Html.DropDownList("ClientId","Select Client")
+                        <br /><br />
+                        <input type="submit" value="Create" class="btn btn-success" />
+
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

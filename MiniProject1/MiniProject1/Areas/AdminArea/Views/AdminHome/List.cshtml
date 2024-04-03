@@ -1,0 +1,50 @@
+﻿@model IEnumerable<MiniProject1.Models.Client>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row col-md-12 mx-auto">
+            <table class="table table-striped text-center">
+                <tr>
+                    @Html.ActionLink("Crate New", "Create",null, new { @class = "btn btn-warning col-md-2" })
+                </tr>
+                <tr>
+                    <th><label>Sr No.</label></th>
+                    <th><label>Client Name</label></th>
+                    <th><label>Address</label></th>
+                    <th><label>Email Id</label></th>
+                    <th><label>Mobile No</label></th>
+                    <th><label>Edit/Delete</label></th>
+                </tr>
+                @foreach (var temp in Model)
+                {
+                    <tr>
+                        <td>@temp.ClientId</td>
+                        <td>@temp.ClientName</td>
+                        <td>@temp.Address</td>
+                        <td>@temp.EmailId</td>
+                        <td>@temp.MobileNo</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", "AdminHome", new { area = "AdminArea" , id=temp.ClientId}, new { @class = "btn btn-success" }) |
+                            @Html.ActionLink("Delete", "Delete", "AdminHome",new { area = "AdminArea" , id=temp.ClientId}, new { @class = "btn btn-danger" })
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+

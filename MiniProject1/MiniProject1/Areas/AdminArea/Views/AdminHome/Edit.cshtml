@@ -1,0 +1,54 @@
+﻿@model MiniProject1.Models.Client
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row col-md-12">
+            <div class="row align-items-center mt-3">
+                <div class="col-3 mx-auto">
+                    <h2>Edit Client Record</h2>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.HiddenFor(p=>p.ClientId)
+                        <label>Client Name</label>
+                        <br />
+                        @Html.EditorFor(p => p.ClientName)<br />
+                        @Html.ValidationMessageFor(p=>p.ClientName)
+                        <br /><br />
+                        <label>Address</label>
+                        <br />
+                        @Html.EditorFor(p=>p.Address)<br />
+                        @Html.ValidationMessageFor(p=>p.Address)
+                        <br /><br />
+                        <label>EmailId</label>
+                        <br />
+                        @Html.EditorFor(p=>p.EmailId)<br />
+                        @Html.ValidationMessageFor(p=>p.EmailId)
+                        <br /><br />
+                        <label>Mobile No</label>
+                        <br />
+                        @Html.EditorFor(p=>p.MobileNo)<br />
+                        @Html.ValidationMessageFor(p=>p.MobileNo)
+                        <br /><br />
+                        <input type="submit" value="Update" class="btn btn-success" /> 
+                        
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

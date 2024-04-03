@@ -1,0 +1,45 @@
+﻿@model MiniProject1.Models.AdminVM 
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+<body>
+    <div class="container align-items-center mt-5">
+        <div class="row col-md-12">
+            <div class="row align-items-center mt-3">
+                <div class="col-3 mx-auto">
+                    <h2>Admin Login</h2>
+                    @using (Html.BeginForm())
+                    {
+
+                        <label>Email Id</label>
+                        <br />
+                        @Html.EditorFor(p => p.EmailId)
+                        <br />
+                        @Html.ValidationMessageFor(p=>p.EmailId)
+                        <br /><br />
+                        <label>Password</label>
+                        <br />
+                        @Html.EditorFor(p => p.Password)
+                        <br />
+                        @Html.ValidationMessageFor(p=>p.Password)
+                        <br /><br />
+                        <input type="submit" value="Login" class="btn btn-success"/>
+                        <br />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

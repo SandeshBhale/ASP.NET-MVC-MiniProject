@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row col-md-12 mx-auto">
+                <table class="table table-striped text-center">
+                    <tr>
+                        @Html.ActionLink("Create New", "CreateUser",null, new {@class="btn btn-warning col-md-2"})
+                    </tr>
+                    <tr>
+                        <th><label>Sr No.</label></th>
+                        <th><label>First Name</label></th>
+                        <th><label>Last Name</label></th>
+                        <th><label>Project Name</label></th>
+                        <th><label>Address</label></th>
+                        <th><label>Email Id</label></th>
+                        <th><label>Mobile No</label></th>
+                        <th><label>Registation Date</label></th>
+                        <th><label>Edit/Delete</label></th>
+                    </tr>
+                    @foreach (var temp in Model)
+                    {
+                        <tr>
+                            <td>@temp.UserId</td>
+                            <td>@temp.FirstName</td>
+                            <td>@temp.LastName</td>
+                            <td>@temp.ClientProject.ProjectName</td>
+                            <td>@temp.Address</td>
+                            <td>@temp.EmailId</td>
+                            <td>@temp.MobileNo</td>
+                            <td>@temp.RegistrationDate</td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditUser", "AdminHome", new {area="AdminArea", id = temp.UserId }, new {@class="btn btn-success"}) |
+                                @Html.ActionLink("Delete", "DeleteUser", "AdminHome", new { area = "AdminArea", id = temp.UserId }, new {@class="btn btn-danger"})
+                            </td>
+                        </tr>
+                    }
+                </table>
+        </div>
+    </div>
+</body>
+</html>
